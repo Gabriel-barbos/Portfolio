@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gabriel Barbosa | Personal Portfolio</title>
+  <meta name="description" content="Portfólio de Gabriel Barbosa para compartilhar projetos e habilidades desenvolvidas.">
+
+  <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+  <!--HEADER DESKTOP-->
+  <header class="header">
+    <nav class="header__nav">
+      <ul class="menu menu--principal">
+        <li class="menu__item">
+          <a class="menu__link active" href="#home">
+            <span class="menu__text">Home</span>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#projetos">
+            <span class="menu__text">Projects</span>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#sobre">
+            <span class="menu__text">About</span>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#contato">
+            <span class="menu__text">Contact</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+   
+    <div class="header_brand">
+      <div class="header__toggle">
+          <i id="toggleTheme" class="bi bi-sun"></i>
+          <div class="dropdown-idiom">
+              <button onclick="toggleDropdown()" class="dropbtn">English-US
+                  <i class="bi bi-chevron-compact-right"></i>
+              </button>
+              <div id="pageDropdown" class="dropdown-content">
+                  <a href="index.html">Português-Brasil</a>
+              </div>
+          </div>
+      </div>
+  </div>
+  </header>
+   <!--HEADER MOBILE-->
+  <nav class="nav--mobile">
+    <ul class="menu menu--mobile">
+      <li class="menu__item">
+        <a class="menu__link active" href="#home">
+          <i class="menu__icon bi bi-house-door"></i>
+          <span class="menu__text">Home</span>
+        </a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link" href="#projetos">
+          <i class="menu__icon bi bi-window-stack"></i>
+          <span class="menu__text">Projects</span>
+        </a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link" href="#sobre">
+          <i class="menu__icon bi bi-person"></i>
+          <span class="menu__text">About</span>
+        </a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link" href="#contato">
+          <i class="menu__icon bi bi-envelope"></i>
+          <span class="menu__text">Contact</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+<!--HOME CONTENT-->
+  <main id="home">
+    <div class="main__content1">
+      <h1><b>Gabriel Barbosa Da Silva </h1>
+      <p>Upper-Level Student in Multiplatform Software Development and Industrial Automation Technician</p> 
+      <ul class="menu menu--social">
+        <li>
+          <a class="menu__link" href="https://github.com/Gabriel-barbos" target="_blank">
+            <i class="menu__icon bi bi-github"></i>
+          </a>
+        </li>
+        <li>
+          <a class="menu__link" href="https://www.linkedin.com/in/gabriel-barbosa-da-silva-35bb19256/" target="_blank">
+            <i class="menu__icon bi bi-linkedin"></i>
+          </a>
+        </li>
+        <li>
+          <a class="menu__link" href="" target="_blank">
+            <i class="menu__icon bi bi-instagram"></i>
+          </a>
+        </li>
+      </ul>
+      <a href="#projetos">
+        <button class="btn btn--primary">
+          <span>See Projects</span>
+          <i class="bi bi-arrow-down-right"></i>
+        </button>  
+      </a>
+    </div>
+    <div class="main__content2">
+    <img src="/Software engineer (2).gif"> </img>
+    </div>
+  </main>
+ <!--TECNOLOGIAS CONHECIDAS-->
+  <section class="technologies">
+    <h2>Proficiency in the leading technologies of the market.</h2>
+    <ul class="technologies__list">
+      <li class="technologies__item">
+        <img class="technologies__logo" src="assets/images/technologies/icons8-java.svg" alt="Logo Java">
+      </li>
+      <li class="technologies__item">
+        <img class="technologies__logo" src="assets/images/technologies/icons8-python.svg" alt="Logo Python">
+      </li>
+      <li class="technologies__item">
+        <img class="technologies__logo" src="assets/images/technologies/icons8-javascript.svg" alt="Logo JavaScript">
+      </li>
+      <li class="technologies__item">
+        <img class="technologies__logo" src="assets/images/technologies/icons8-react-js.svg" alt="Logo React">
+      </li>
+      <li class="technologies__item">
+        <img class="technologies__logo" src="assets/images/technologies/icons8-node-js.svg" alt="Logo Node.js">
+      </li>
+
+      <li class="technologies__item">
+        <img class="technologies__logo" src="assets/images/technologies/icons8-mysql.svg" alt="Logo SQL">
+      </li>
+
+      <li class="technologies__item">
+        <img class="technologies__logo" src="assets/images/technologies/icons8-mongodb.svg" alt="Logo mongo">
+      </li>
+
+      <li class="technologies__item">
+        <img class="technologies__logo" src="assets/images/technologies/icons8-html.svg" alt="Logo HTML">
+      </li>
+
+      <li class="technologies__item">
+        <img class="technologies__logo" src="assets/images/technologies/icons8-css3.svg" alt="Logo css">
+      </li>
+
+      <li class="technologies__item">
+        <img class="technologies__logo" src="assets/images/technologies/icons8-arduino.svg" alt="Logo arduino">
+      </li>
+    </ul>
+  </section>
+ <!--HEADER PROJETOS-->
+  <section id="projetos" class="projects">
+    <h2>Projects</h2>
+    <div class="projects__container">
+       <!--CARDS DE PROJETOS-->
+      <div class="projects__card">
+        <img class="card__cover" src="assets/images/projects/Cortinas-mockup.jpg" alt="Capa ">
+        <div class="card__body">
+          <h3 class="card__title">Michele Cortinas</h3>
+          <p class="card__description">Curtain e-commerce</p>
+          <ul class="card__list">
+            <li class="card__item">Password recovery using Email</li>
+            <li class="card__item">Shopping Cart</li>
+            <li class="card__item">Visualization of each product according to color</li>
+          </ul>
+          <ul class="technologies__list">
+            <li class="technologies__item">
+              <img class="technologies__logo" src="assets/images/technologies/icons8-react-js.svg" alt="Logo react">
+            </li>
+            <li class="technologies__item">
+              <img class="technologies__logo" src="assets/images/technologies/icons8-javascript.svg" alt="Logo Js">
+            </li>
+            <li class="technologies__item">
+              <img class="technologies__logo" src="assets/images/technologies/icons8-node-js.svg" alt="Logo node">
+            </li>
+            <li class="technologies__item">
+              <img class="technologies__logo" src="assets/images/technologies/icons8-mysql.svg" alt="Logo SQL">
+            </li>
+          </ul>
+          <div class="card__buttons">
+            <button class="btn btn-proj">
+              <a href="/Docs/Michele Cortinas.pdf" target="_blank">
+              <span>Preview</span>
+              </a>
+            </button>  
+            <button class="btn">
+              <a href="https://github.com/Gabriel-barbos/Michele-Cortinas">
+              <span>repository</span>
+              </a>
+            </button>  
+          </div>
+        </div>
+      </div>
+
+<a class="resume-btn" 
+href="/Docs/CV_Gabriel_Barbosa2 01.05.pdf"target="_blank">
+  <span>
+    <i class="bi bi-file-earmark-arrow-down"></i>
+  </span>
+</a>
+
+
+      <div class="projects__card">
+        <img class="card__cover" src="assets/images/projects/Tourlis.jpg" alt="Capa Josi's Box">
+        <div class="card__body">
+          <h3 class="card__title">Tourlis</h3>
+          <p class="card__description">Sustainable tourism website</p>
+          <ul class="card__list">
+            <li class="card__item">PowerBI Integration</li>
+            <li class="card__item">Responsive</li>
+            <li class="card__item">Interactive Quiz</li>
+          </ul>
+          <ul class="technologies__list">
+            <li class="technologies__item">
+              <img class="technologies__logo" src="assets/images/technologies/icons8-power-bi.svg" alt="Logo Power BI">
+            </li>
+            <li class="technologies__item">
+              <img class="technologies__logo" src="assets/images/technologies/icons8-javascript.svg" alt="Logo Js">
+            </li>
+            <li class="technologies__item">
+              <img class="technologies__logo" src="assets/images/technologies/icons8-html.svg" alt="Logo HTML">
+            </li>
+            <li class="technologies__item">
+              <img class="technologies__logo" src="assets/images/technologies/icons8-css3.svg" alt="Logo CSS">
+            </li>
+          </ul>
+          <div class="card__buttons">
+            <button class="btn btn-proj">
+              <a href="https://youtu.be/TsgTKow4El0?si=g6CTXUWCz50tbaaO"target="_blank">
+              <span>Preview</span>
+              </a>
+            </button>  
+
+
+            <button class="btn">
+              <a href="https://github.com/Gabriel-barbos/Tourlis">
+              <span>repository</span>
+              </a>
+            </button>  
+          </div>
+        </div>
+      </div>
+
+      <div class="projects__card">
+        <img class="card__cover" src="assets/images/projects/Firebase.jpg" alt="Capa Josi's Box">
+        <div class="card__body">
+          <h3 class="card__title">CRUD with FireBase</h3>
+          <p class="card__description">Location registration system</p>
+          <ul class="card__list">
+            <li class="card__item">Front End using Bootstrap</li>
+            <li class="card__item">Item registration using Firebase Storage and Firestore Database.</li>
+            <li class="card__item">Search for items by name or location</li>
+          </ul>
+          <ul class="technologies__list">
+            <li class="technologies__item">
+              <img class="technologies__logo" src="assets/images/technologies/icons8-bootstrap.svg" alt="Logo Bootstrap">
+            </li>
+            <li class="technologies__item">
+              <img class="technologies__logo" src="assets/images/technologies/icons8-firebase.svg" alt="Logo FireBase">
+            </li>
+            <li class="technologies__item">
+              <img class="technologies__logo" src="assets/images/technologies/icons8-javascript.svg" alt="Logo ">
+            </li>
+            <li class="technologies__item">
+              <img class="technologies__logo" src="assets/images/technologies/icons8-node-js.svg" alt="Logo node">
+            </li>
+          </ul>
+          <div class="card__buttons">
+            <button class="btn btn-proj">
+              <a href="/Docs/CRUD com Firebase.pdf" target="_blank">
+              <span>Preview</span>
+            </a>
+
+            </button>  
+            <a href="https://github.com/Gabriel-barbos/CRUD-NodeJs-Firebase">
+            <button class="btn">
+              <span>Repository</span>
+            </a>
+            </button>  
+          </div>
+        </div>
+      </div>
+      <a href="https://github.com/Gabriel-barbos">
+        <button class="btn btn--primary">
+          <span>See all projects </span>
+          <i class="bi bi-arrow-up-right"></i>
+        </button>  
+      </a>
+    </div>
+  </section>
+ <!--SOBRE-->
+  <section id="sobre" class="about">
+    <div class="about__content1">
+      <img class="about__photo" src="assets/images/prof-pic.jpg" alt="">
+      <div class="about__description">
+        <h2>About Me</h2>
+        <p>Gabriel Barbosa. I am a technology enthusiast, constantly seeking to enhance my knowledge and skills in this dynamic and ever-evolving field.
+
+            My soft skills are fundamental to my professional success, as I possess exceptional communication abilities, enabling me to collaborate effectively in multidisciplinary teams. I am proactive and resilient, always striving for creative solutions to complex challenges.
+        </p>  
+        <div class="about__icons">
+          <i class="bi bi-translate"></i>
+          <span>English-US: Advanced </span>
+        </div>
+        <div class="description__buttons">
+          <a href="https://www.linkedin.com/in/gabriel-barbosa-da-silva-35bb19256/" target="_blank">
+            <button class="btn btn--primary">
+              <span>Connect with me</span>
+              <i class="bi bi-arrow-up-right"></i>
+            </button> 
+          </a>
+          <a href="/Docs/CV_Gabriel_Barbosa2 01.05.pdf"target="_blank">
+            
+            <button class="btn">
+              <span>Resumme</span>
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="about__content2">
+      <div class="col1">
+        <div class="row1">
+          <h3>Academic Education</h3>
+          <h4> Multiplatform Software Development</h4>
+          <span>March 2023 - At the moment</span>
+          <div class="about__icons">
+            <i class="bi bi-bank"></i>
+            <span>FATEC Zona Leste</span>
+          </div>
+          <div class="about__icons">
+            
+          </div>
+        </div>
+
+        <div class="row1">
+         
+          <h4>Technical Education integrated into High School</h4>
+          <span>March 2020 - December 2022</span>
+          <div class="about__icons">
+            <i class="bi bi-bank"></i>
+            <span>ETEC Martin Luther King</span>
+          </div>
+          <div class="about__icons">
+            <i class="bi bi-mortarboard"></i>
+            <span>Industrial Automation Technician</span>
+          </div>
+        </div>
+
+        <div class="row2">
+          <h3>Experiências</h3>
+          <h4>Estágiario de Ti</h4>
+          <div class="about__icons">
+          <i class="bi bi-bank"></i>
+            <span>Scope Tecnnology</span>
+          </div>
+          <span> Abril 2023 - Atualmente</span>
+          <span>
+            Experience in assembling, configuring, and testing vehicle telemetry equipment (IoT Devices) and providing customer support regarding the use of fleet control platform.
+          </span>
+          <ul class="about__list">
+            <li class="about__item">Development of video training materials.</li>
+            <li class="about__item">Engagement in enhancing equipment configuration processes</li>
+            <li class="about__item">Development of process management system using Monday</li>
+          </ul>
+        </div>
+        
+        <div class="row2">
+          <h4>English Teacher</h4>
+        
+          <span> February 2024 - At the moment </span>
+          <span>
+            Conducting English classes in a hybrid format with part of the class attending in person and the remainder virtually.          </span>
+          <ul class="about__list">
+            <li class="about__item">Preparation of study materials</li>
+            <li class="about__item">Creation of a virtual environment for classes with tips, notes, and exercises on Discord.</li>
+            <li class="about__item">Facilitating group dynamics to enhance language learning.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col2">
+        <h3>Courses</h3>
+        <div id="accordion">
+          <div class="accordion__item active">
+            <button class="accordion__header start">
+              <span> Git and Github Introduction</span>
+              <i class="bi bi-caret-down-fill"></i>
+            </button>
+            <div class="accordion__body">
+              <p>
+                Digital Innovation One. September 2023. 2h.
+              </p>
+              <p>
+                What is code versioning, Git and GitHub. How to install and configure Git on different systems
+                operations and how to authenticate via Token and SSH. How to handle repositories, ranging from creation and cloning
+                to branch management, going through all the steps of saving, undoing and synchronizing changes
+                with the remote repository.
+              </p>
+            </div>
+          </div>
+          <div class="accordion__item">
+            <button class="accordion__header">
+              <span>Full English Course</span>
+              <i class="bi bi-caret-down-fill"></i>
+            </button>
+            <div class="accordion__body">
+              <p>
+               Wizard Language School 2013-2021
+              </p>
+              <p>
+                English course held at Wizard for English language proficiency, focusing on communication and oral and written expression, validated by the TOEIC test (760)              </p>
+            </div>
+          </div>
+          <div class="accordion__item">
+            <button class="accordion__header end">
+              <span>Introduction to Project Management</span>
+              <i class="bi bi-caret-down-fill"></i>
+            </button>
+            <div class="accordion__body end">
+              <p>
+                Fundação Bradesco. Feb 2024. 10h.
+              </p>
+              <p>
+                Introduction to Project Management with a focus on key concepts for conventional management, such as planning, organization, execution. Approaching PMBOk and explaining how to carry out a project perfectly              </p>
+            </div>
+          </div>
+          <div class="accordion__item">
+            <button class="accordion__header end">
+              <span>Drone Construction Course</span>
+              <i class="bi bi-caret-down-fill"></i>
+            </button>
+            <div class="accordion__body end">
+              <p>
+                Jovem Engenheiro. Fev 2019. 80h.
+              </p>
+              <p>
+                Introduction of various physical concepts such as: kinematics, Newton's Laws, Expansion of Materials. Furthermore, addressing 3D modeling concepts where the entire drone prototype was
+                modeled in 3D in SketchUp and later printed on a 3D printer and all the programming part of the microcontroller and electronicsca do projeto foi realizada também
+              </p>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <button class="accordion__header end">
+              <span>
+                Introduction to Creating Websites with HTML5 and CSS3</span>
+              <i class="bi bi-caret-down-fill"></i>
+            </button>
+            <div class="accordion__body end">
+              <p>
+                Digital Innovation One. Jan 2024. 6h.
+              </p>
+              <p>
+                Introduction of various concepts about the internet such as: HTTP, HTTPS protocols, GET and POST methods and the entire structure of the internet in terms of URLs, browsers, responsiveness, etc.              </p>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <button class="accordion__header end">
+              <span>Essential Programming Logic</span>
+              <i class="bi bi-caret-down-fill"></i>
+            </button>
+            <div class="accordion__body end">
+              <p>
+                Digital Innovation One. Dez 2023. 4h.
+              </p>
+              <p>
+                Introduction to several key concepts about programming logic such as creating variables, methods, classes and good programming practices.
+                Concepts such as Debugging, Refactor, etc. were also mentioned.
+                              </p>
+            </div>
+          </div>
+
+          <div class="space">
+            
+          </div>
+          <div class="row2">
+            <h3>Known tools</h3>
+            <ul class="about__list">
+              <li class="about__item">Figma: Intermediary</li>
+              <li class="about__item">SketchUp: Advanced</li>
+              <li class="about__item">Bootstrap: Intermediary</li>
+              <li class="about__item">Excel: Intermediary</li>
+              <li class="about__item">Photo and Video Editing: Advanced</li>
+              <li class="about__item">AutoCAD: Intermediary</li>
+              <li class="about__item">Windows: Advanced</li>
+              <li class="about__item">Word: Advanced</li>
+              <li class="about__item">PowerPoint: Advanced</li>
+              <li class="about__item">Github: Advanced</li>
+              <li class="about__item">Teams: Advanced</li>
+              <li class="about__item">Monday: Advanced</li>
+            </ul>
+          </div>
+        </div>
+
+  </section>
+   <!--CONTATO-->
+  <section id="contato" class="contact">
+    <h2>Contact-me</h2>
+    <p>I am available for services and new connections. Contact me via
+        email and connect with me through my social media.
+    </p>
+    <ul class="menu menu--social">
+      <li>
+        <a class="menu__link" href="https://github.com/Gabriel-barbos" target="_blank">
+          <i class="menu__icon bi bi-github"></i>
+          <span>GitHub</span>
+        </a>
+      </li>
+      <li>
+        <a class="menu__link" href="https://www.linkedin.com/in/gabriel-barbosa-da-silva-35bb19256/" target="_blank">
+          <i class="menu__icon bi bi-linkedin"></i>
+          <span>LinkedIn</span>
+        </a>
+      </li>
+      <li>
+        <a class="menu__link" href="" target="_blank">
+          <i class="menu__icon bi bi-instagram"></i>
+          <span>Instagram</span>
+        </a>
+      </li>
+    </ul>
+    <a href="mailto:gabriel.barbosa79@outlook.com">
+      <button class="btn btn--primary">
+        <span class="email">gabriel.barbosa79@outlook.com</span>
+      </button>  
+    </a>
+  </section>
+
+  <footer>
+    <p>
+      © 2024. Portfólio desenvolvido por Gabriel Barbosa Da Silva 
+    </p>
+  </footer>
+  <script src="assets/js/scripts.js"></script>
+</body>
+</html>
