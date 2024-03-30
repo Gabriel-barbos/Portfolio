@@ -334,11 +334,12 @@ main {
 }
 
 .main__content2  {
-  width: 100%;
+  width: 90%;
   aspect-ratio: 16/9;
  align-content: center;
- padding-left: 20rem;
+ padding-left: 2rem;
  border-radius: 1rem;
+ display: flex;
 }
 
 /* TECHNOLOGIES */
