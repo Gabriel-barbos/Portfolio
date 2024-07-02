@@ -52,3 +52,14 @@ document.getElementById("pageDropdown").addEventListener("click", function (even
   }
 });
 
+document.querySelectorAll('.flipButton').forEach(button => {
+  button.addEventListener('click', function() {
+      this.closest('.job-card').classList.add('flipped');
+  });
+});
+
+document.querySelectorAll('.flipBackButton').forEach(button => {
+  button.addEventListener('click', function() {
+      this.closest('.job-card').classList.remove('flipped');
+  });
+});
